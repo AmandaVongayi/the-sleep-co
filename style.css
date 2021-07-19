@@ -9,11 +9,14 @@ box-sizing: border-box;
 
 /* Image Styles */
 .bg-image{
-    /* background-image: url(/images/the-sleep-co-1.jpg); */
+    background-image: url(/images/the-sleep-co-1.jpg);
     background-size: cover;
     min-height: 10rem;
 }
 
+.landscape{ padding-bottom: 65%;}
+.portrait{ padding-bottom: 125%;}
+.square{ padding-bottom: 100%;}
 
 /* Universal styles and utility classes */
 .padded     {padding: 5%;}
@@ -24,6 +27,16 @@ box-sizing: border-box;
     background-color: #192837;
     color: white;
 }
+
+.bg-featured{
+    background-color: #ffbe00;
+
+}
+
+.bg-accent{
+    background-color: #e3ecf2;
+}
+
 .tall-50    { min-height: 50vh;}
 .tall-60    { min-height: 60vh;}
 .tall-70   { min-height: 70vh;}
@@ -68,11 +81,14 @@ body{
 .bold-font{ font-weight: 800;}
 
 
+h2, h3, h4{
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
 
 h2{
     font-size: 2.5rem;
-    line-height: 1.1; 
-    margin-bottom: 1rem;
 }
 
 h3{ line-height: 1;}
