@@ -7,22 +7,21 @@ box-sizing: border-box;
 
 
 
-/* Image Styles */
-.bg-image{
-    background-image: url(/images/the-sleep-co-1.jpg);
-    background-size: cover;
-    min-height: 10rem;
-}
-
-.landscape{ padding-bottom: 65%;}
-.portrait{ padding-bottom: 125%;}
-.square{ padding-bottom: 100%;}
+/* ---------------------------------- Universal Styles ---------------------------------- */
 
 /* Universal styles and utility classes */
 .padded     {padding: 5%;}
 .padded-sm  {padding: 1rem;}
 .padded-lg  {padding: 10%;}
 
+.tall-50    { min-height: 50vh;}
+.tall-60    { min-height: 60vh;}
+.tall-70   { min-height: 70vh;}
+.tall-80    { min-height: 80vh;}
+.tall-90    { min-height: 90vh;}
+.tall-100   { min-height: 100vh;}
+
+/* Background and images ----------------------*/
 .bg-dark{
     background-color: #192837;
     color: white;
@@ -37,19 +36,20 @@ box-sizing: border-box;
     background-color: #e3ecf2;
 }
 
-.tall-50    { min-height: 50vh;}
-.tall-60    { min-height: 60vh;}
-.tall-70   { min-height: 70vh;}
-.tall-80    { min-height: 80vh;}
-.tall-90    { min-height: 90vh;}
-.tall-100   { min-height: 100vh;}
 
-body{
-    font-family: 'Catamaran', sans-serif;
-    color: #192837;
+/* Image Styles */
+.bg-image{
+    background-image: url(/images/the-sleep-co-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 10rem;
 }
 
-/* ---------------- Typography styles ----------------- */
+.landscape{ padding-bottom: 65%;}
+.portrait{ padding-bottom: 125%;}
+.square{ padding-bottom: 100%;}
+
+/*  Typography styles ----------------- */
 .text-left      {text-align: left;}
 .text-center    {text-align: center;}
 .text-right     {text-align: right;}
@@ -57,28 +57,29 @@ body{
 .featured-text{ color: #ffbe00;}
 .white-text{ color: white;}
 
-.small-text     { font-size: 1.5rem;}
+.small-text     {   font-size: 1.5rem;}
 .medium-text    { 
-    font-size: 2rem;
-    line-height: 1.2;
+                    font-size: 2rem;
+                    line-height: 1.2;
 }
-.big-text       { font-size: 4.5rem;}
+.big-text       {   font-size: 4.5rem;}
 
 .subtitle{ 
     font-size: 1.2rem;
     color: rgb(120, 120, 125);
 }
-.quote-icon{
-    font-size: 6rem; 
-    display: inline-block;
-    color: rgb(120, 120, 125);
-    line-height:1;
-}
+
 
 .light-font{ font-weight: 200;}
 .normal-font{ font-weight: 400;}
 .regular-font{ font-weight: 500;}
 .bold-font{ font-weight: 800;}
+
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    color: #192837;
+}
 
 
 h2, h3, h4{
@@ -89,6 +90,14 @@ h2, h3, h4{
 
 h2{
     font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 1.4rem;
 }
 
 h3{ line-height: 1;}
@@ -112,11 +121,18 @@ a:hover{
     color: #ffbe00;
 }
 
-/* ---------------- Header & Footer----------------- */
+
+
+
+
+/* ---------------------------------- Individual Section Styles ---------------------------------- */
+
+/* ---------------- Header & Footer---------------- */
 header{
     background-image: url('/images/the-sleep-co-1.jpg');
     background-size: cover;
     background-position: center;
+    padding: 1%;
 }
 
 header h3{
@@ -126,8 +142,17 @@ header h3{
 
 footer a{ border: none;}
 
+nav a{
+    padding: 0.5rem;
+    display: inline-block;
+    border:none;
+}
 
-/* ---------------- BG Images ----------------- */
+logo h2{
+    margin-bottom: 0;
+}
+
+/* ---------------- BG Images ---------------- */
 
 .bg-bed{
     background-image: url('/images/the-sleep-co-4.jpg');
@@ -143,7 +168,7 @@ footer a{ border: none;}
     background-position: 50% 57%;
 }
 
-/* ---------------- Features icon grid----------------- */
+/* ---------------- Features icon grid---------------- */
 .fas{
     display: block;
     text-align: center;
@@ -152,15 +177,24 @@ footer a{ border: none;}
 }
 
 
-/* ---------------- Banner----------------- */
+/* ---------------- Banner---------------- */
 
-/* ---------------- Quote----------------- */
+/* ---------------- Quote---------------- */
+
+.quote-icon{
+    font-size: 6rem; 
+    display: inline-block;
+    color: rgb(120, 120, 125);
+    line-height:1;
+}
 
 
 
+/* ---------------- Buttons and Forms ---------------- */
 
 
-
-
-
-
+input,
+textarea{
+    width: 100%;
+    display: block;
+}
