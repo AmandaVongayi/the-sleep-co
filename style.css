@@ -14,12 +14,12 @@ box-sizing: border-box;
 .padded-sm  {padding: 1rem;}
 .padded-lg  {padding: 10%;}
 
-.tall-50    { height: 50vh;}
-.tall-60    { height: 60vh;}
-.tall-70   { height: 70vh;}
-.tall-80    { height: 80vh;}
-.tall-90    { height: 90vh;}
-.tall-100   { height: 100vh;}
+.tall-50    { min-height: 50vh;}
+.tall-60    { min-height: 60vh;}
+.tall-70   { min-height: 70vh;}
+.tall-80    { min-height: 80vh;}
+.tall-90    { min-height: 90vh;}
+.tall-100   { min-height: 100vh;}
 
 /* Background and images ----------------------*/
 .bg-dark{
