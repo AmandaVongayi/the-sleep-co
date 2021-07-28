@@ -1,5 +1,16 @@
 ---
 layout: default
+cards:
+    -   heading: little heading 
+        description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae architecto cupiditate suscipit dignissimos quae corporis! Rerum eum harum aspernatur animi nesciunt voluptatibus delectus consequuntur illum doloribus error. Laudantium, reprehenderit.
+        featured_image: /images/the-sleep-co-1.jpg
+    -   heading: little heading 
+        description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae architecto cupiditate suscipit dignissimos quae corporis! Rerum eum harum aspernatur animi nesciunt voluptatibus delectus consequuntur illum doloribus error. Laudantium, reprehenderit.
+        featured_image: /images/the-sleep-co-1.jpg
+    -   heading: little heading 
+        description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae architecto cupiditate suscipit dignissimos quae corporis! Rerum eum harum aspernatur animi nesciunt voluptatibus delectus consequuntur illum doloribus error. Laudantium, reprehenderit.
+        featured_image: /images/the-sleep-co-1.jpg
+
 ---
 
     <!-- -----------------------Header section /About page----------------------- -->
@@ -15,7 +26,6 @@ layout: default
             </h1>
         </div>
     </header>
-
 
     <!-- -----------------------feature textgrid/ proiduct ----------------------- -->
     <section class="padded grid bg-featured">
@@ -44,37 +54,18 @@ layout: default
     </section>
             <!-- -----------------------Cards section /About page----------------------- -->
     <section class = "grid padded">
+        {% for item in page.cards %}
         <div class = "col-4 padded-sm"> 
             <div class = "card">
-                <div class = "bg-image portrait"></div>
+                <div class = "bg-image portrait" style= "background-image: url('{{item.featured_image}}')"></div>
                 <div class = "padded-sm">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officia aspernatur, error commodi natus id sit animi pariatur omnis sed aliquam incidunt corrupti veniam obcaecati ipsa? Voluptatem eaque molestiae ad.</p>
+                    <h3> {{heading}} </h3>
+                    <p> {{decription}}</p>
                 </div>
             </div>
         </div>
-
-        <div class = "col-4 padded-sm">
-            <div class = "card">
-                <div class = "bg-image portrait"></div>
-                <div class = "padded-sm">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officia aspernatur, error commodi natus id sit animi pariatur omnis sed aliquam incidunt corrupti veniam obcaecati ipsa? Voluptatem eaque molestiae ad.</p>
-                </div>
-            </div>
-         </div>
-
-        <div class = "col-4 padded-sm"> 
-            <div class = "card">
-                <div class = "bg-image portrait"></div>
-                <div class = "padded-sm">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officia aspernatur, error commodi natus id sit animi pariatur omnis sed aliquam incidunt corrupti veniam obcaecati ipsa? Voluptatem eaque molestiae ad.</p>
-                </div>
-            </div>
-
-        </div>
-
+        {%endfor%}
+        
     </section>
 
      <!-- -----------------------banner -------------------------->

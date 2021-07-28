@@ -68,6 +68,10 @@ box-sizing: border-box;
     color: rgb(120, 120, 125);
 }
 
+.icon{
+    font-size: 2rem;
+}
+
 
 .light-font{ font-weight: 200;}
 .normal-font{ font-weight: 400;}
